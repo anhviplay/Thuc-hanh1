@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>FForm dang ky thong tin ca nhan</h2>
+
+    <form action="#" method="post">
+        <label for="name">Ho va ten:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">So dien thoai:</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+
+        <label>Gioi tinh:</label>
+        <div class="gender-group">
+            <input type="radio" id="male" name="gender" value="Nam" required>
+            <label for="male">Nam</label><br>
+
+            <input type="radio" id="female" name="gender" value="Nu">
+            <label for="female">Nu</label><br>
+
+            <input type="radio" id="other" name="gender" value="Khac">
+            <label for="other">Khac</label>
+        </div>
+
+        <input type="submit" value="dang ky">
+    </form>
+</body>
+
+</html>
