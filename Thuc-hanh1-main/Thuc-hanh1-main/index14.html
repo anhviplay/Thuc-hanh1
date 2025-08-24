@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 align="center">FORM GỬI PHẢN HỒI KHÁCH HÀNG</h2>
+    <form action="#" method="post">
+        <label for="rating">Đánh giá theo sao: <span style="color:red">*</span></label>
+        <select id="rating" name="rating" required>
+            <option value="">--Chọn--</option>
+            <option value="1">1 Sao - Rất tệ</option>
+            <option value="2">2 Sao - Tệ</option>
+            <option value="3">3 Sao - Bình thường</option>
+            <option value="4">4 Sao - Tốt</option>
+            <option value="5">5 Sao - Rất tốt</option>
+        </select><br><br>
+
+        <label for="comments">Ý kiến khác:</label><br>
+        <textarea id="comments" name="comments" placeholder="Viết ý kiến của bạn..."></textarea><br>
+        <br>
+
+        <label for="email">Nhập email:<span style="color:red">*</span></label><br>
+        <input type="email" name="email" required /><br><br>
+
+        <button type="submit" style="display:block; margin:auto;">Gửi phản hồi</button>
+    </form>
+</body>
+
+</html>

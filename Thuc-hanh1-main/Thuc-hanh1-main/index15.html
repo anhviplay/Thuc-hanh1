@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 align="center">FORM THANH TOÁN ĐƠN HÀNG</h2>
+    <form action="#" method="post">
+        <label for="name">Họ và tên:<span style="color:red">*</span></label><br>
+        <input type="text" name="name" required /><br><br>
+
+        <label for="date">Ngày sinh:<span style="color:red">*</span></label><br>
+        <input type="date" name="date" required /><br><br>
+
+        <label>Giới tính:<span style="color:red">*</span></label><br>
+        <input type="radio" name="satisfaction" value="Nam" required>Nam<br>
+        <input type="radio" name="satisfaction" value="Nữ" required>Nữ<br>
+        <input type="radio" name="satisfaction" value="Khác" required>khác<br><br>
+
+        <label for="address">Địa chỉ:<span style="color:red">*</span></label><br>
+        <input type="text" name="address" required /><br><br>
+
+        <label>Chọn hình thức thanh toán? <span style="color:red">*</span></label>
+        <div class="options-group">
+            <input type="radio" name="satisfaction" value="congthanhtoan">Thanh toán bằng cổng thanh toán<br>
+            <input type="radio" name="satisfaction" value="vidientu" required>Thanh toán bằng ví điện tử<br>
+            <input type="radio" name="satisfaction" value="thietbithongminh" required>Thanh toán bằng thiết bị thông
+            minh<br>
+            <input type="radio" name="satisfaction" value="the" required>Thanh toán bằng thẻ<br>
+        </div>
+
+        <button type="submit" style="display:block; margin:auto;">Thanh toán</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: "Segoe UI", Roboto, sans-serif;
+        background: #f5f7fa;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+    }
+
+    .page {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: #fff;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        margin-bottom: 25px;
+    }
+
+    .avatar {
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border: 4px solid #4e73df;
+    }
+
+    .name {
+        font-size: 1.8em;
+        color: #222;
+    }
+
+    .sub {
+        font-size: 1.1em;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .contact p {
+        margin: 3px 0;
+        font-size: 0.95em;
+        color: #444;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    }
+
+    .card h2 {
+        margin-bottom: 12px;
+        font-size: 1.3em;
+        color: #4e73df;
+        border-bottom: 2px solid #e6e9f2;
+        padding-bottom: 5px;
+    }
+
+    .muted {
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 15px;
+    }
+
+    ul li {
+        position: relative;
+        margin-bottom: 8px;
+    }
+
+    ul li::before {
+        content: "•";
+        color: #4e73df;
+        font-weight: bold;
+        position: absolute;
+        left: -15px;
+    }
+
+    .pill {
+        display: inline-block;
+        padding: 6px 12px;
+        margin: 5px;
+        background: #eef3ff;
+        color: #2d4ab8;
+        border-radius: 20px;
+        font-size: 0.9em;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    .pill:hover {
+        background: #4e73df;
+        color: #fff;
+    }
+
+    .item {
+        margin-bottom: 18px;
+    }
+
+    .item strong {
+        display: block;
+        font-size: 1.05em;
+        margin-bottom: 5px;
+        color: #222;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9em;
+        color: #777;
+        margin-bottom: 8px;
+    }
+</style>
+
+<body>
+    <main class="page">
+        <section class="header">
+            <img class="avatar" src="../image/default-avatar.jpg" alt="Ảnh đại diện" width="200">
+            <div>
+                <h1 class="name">Nguyễn Tuấn Anh</h1>
+                <p class="sub">Web Developer • Bình Dương</p>
+                <div class="contact">
+                    <p> 0987654321</p>
+                    <p> tuananh.nguyen@gmail.com</p>
+                    <p> https://github.com/tuananhdev</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <h2>Thông tin cá nhân</h2>
+                <p class="muted">
+                    Lập trình viên trẻ với niềm đam mê công nghệ, thích khám phá các xu hướng mới về web và bảo mật.
+                </p>
+                <ul>
+                    <li>Ngày sinh: 09/01/2005</li>
+                    <li>Địa chỉ: Dầu Tiếng, Bình Dương</li>
+                    <li>Sở thích: Tập gym, Nghe nhạc</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Kỹ năng</h2>
+                <div>
+                    <span class="pill">HTML5</span>
+                    <span class="pill">CSS3</span>
+                    <span class="pill">JavaScript</span>
+                    <span class="pill">ReactJS</span>
+                    <span class="pill">Node.js</span>
+                    <span class="pill">Git</span>
+                    <span class="pill">Photoshop</span>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="item">
+                    <strong>Front-end Intern – Công ty WebPro</strong>
+                    <div class="row"><span>06/2025 – nay</span><span>Bình Dương</span></div>
+                    <ul>
+                        <li>Tham gia phát triển giao diện website cho khách hàng doanh nghiệp.</li>
+                        <li>Hỗ trợ tối ưu hiệu suất và bảo mật cho các dự án web.</li>
+                        <li>Phối hợp với team thiết kế để nâng cao trải nghiệm người dùng.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <strong>Freelancer – Thiết kế website cá nhân</strong>
+                    <div class="row"><span>2024 – nay</span><span>Remote</span></div>
+                    <ul>
+                        <li>Tư vấn và xây dựng website cho cá nhân, cửa hàng nhỏ.</li>
+                        <li>Triển khai các giải pháp bảo mật cơ bản cho website.</li>
+                        <li>Hỗ trợ khách hàng quản lý nội dung và cập nhật giao diện.</li>
+                    </ul>
+                </div>
+            </article>
+
+   <article class="card">
+    <h2>Học vấn</h2>
+    <div class="item">
+        <strong>Sinh viên CNTT – Đại học Công nghiệp TP.HCM</strong>
+        <div class="row"><span>2023 – 2027</span><span>TP.HCM</span></div>
+        <ul>
+            <li>Chuyên ngành Công nghệ phần mềm, GPA 3.4/4.0.</li>
+        </ul>
+    </div>
+    <div class="item">
+        <strong>Chứng chỉ</strong>
+        <ul>
+            <li>Google IT Support</li>
+            <li>Responsive  Web Design – freeCodeCamp</li>
+        </ul>
+    </div>
+</article>–
+        </section>
